@@ -160,11 +160,25 @@
 <dd>Determines if two values should be considered equal.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Par-Core-Values.html#method_equalsNoneIn">equalsNoneIn()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Determines if a value should be considered equal to __none__ of the items in the list of other values.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Par-Core-Values.html#method_equalsNoneOf">equalsNoneOf()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Determines if a value should be considered equal to __none__ of the other values.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Par-Core-Values.html#method_equalsOneIn">equalsOneIn()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Determines if a value should be considered equal to __one__ of the items in the list of other values.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Par-Core-Values.html#method_equalsOneOf">equalsOneOf()</a>
@@ -282,6 +296,95 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_equalsNoneIn">
+        equalsNoneIn()
+        <a href="classes/Par-Core-Values.html#method_equalsNoneIn" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">163</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Determines if a value should be considered equal to __none__ of the items in the list of other values.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">equalsNoneIn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">iterable&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$otherValues</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>Usage:</p>
+<pre class="prettyprint"><code class="language-php">if (Values::equalsNoneIn($a, [$b, $c])) {
+    // When not equal to $b and $c
+}
+</code></pre>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The value to test</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$otherValues</span>
+                : <span class="phpdocumentor-signature__argument__return-type">iterable&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The list of other values with which to compare</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Par-Core-Values.html#method_equalsNoneIn#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Par\Core\Values::equals">Values::equals</abbr></span>
+                                        
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-mutation-free</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if value should be considered equal to none of the items in the list of other values</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_equalsNoneOf">
         equalsNoneOf()
         <a href="classes/Par-Core-Values.html#method_equalsNoneOf" class="headerlink"><i class="fas fa-link"></i></a>
@@ -290,7 +393,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -371,6 +474,95 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_equalsOneIn">
+        equalsOneIn()
+        <a href="classes/Par-Core-Values.html#method_equalsOneIn" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">139</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Determines if a value should be considered equal to __one__ of the items in the list of other values.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">equalsOneIn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">iterable&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$otherValues</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>Usage:</p>
+<pre class="prettyprint"><code class="language-php">if (Values::equalsOneIn($a, [$b, $c])) {
+    // When equal to $b or $c
+}
+</code></pre>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The value to test</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$otherValues</span>
+                : <span class="phpdocumentor-signature__argument__return-type">iterable&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The list of other values with which to compare</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Par-Core-Values.html#method_equalsOneIn#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Par\Core\Values::equals">Values::equals</abbr></span>
+                                        
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-mutation-free</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if value should be considered equal to one of the items in the list of other values</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_equalsOneOf">
         equalsOneOf()
         <a href="classes/Par-Core-Values.html#method_equalsOneOf" class="headerlink"><i class="fas fa-link"></i></a>
@@ -379,7 +571,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -568,7 +760,9 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/Par-Core-Values.html#method_equals">equals()</a></li>
+                                            <li><a href="classes/Par-Core-Values.html#method_equalsNoneIn">equalsNoneIn()</a></li>
                                             <li><a href="classes/Par-Core-Values.html#method_equalsNoneOf">equalsNoneOf()</a></li>
+                                            <li><a href="classes/Par-Core-Values.html#method_equalsOneIn">equalsOneIn()</a></li>
                                             <li><a href="classes/Par-Core-Values.html#method_equalsOneOf">equalsOneOf()</a></li>
                                     </ul>
             </li>

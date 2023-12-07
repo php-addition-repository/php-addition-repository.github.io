@@ -56,6 +56,16 @@ Search.appendIndex(
             "summary": "Determines\u0020if\u0020a\u0020value\u0020should\u0020be\u0020considered\u0020equal\u0020to\u0020__none__\u0020of\u0020the\u0020other\u0020values.",
             "url": "classes/Par-Core-Values.html#method_equalsNoneOf"
         },                {
+            "fqsen": "\\Par\\Core\\Values\u003A\u003AequalsOneIn\u0028\u0029",
+            "name": "equalsOneIn",
+            "summary": "Determines\u0020if\u0020a\u0020value\u0020should\u0020be\u0020considered\u0020equal\u0020to\u0020__one__\u0020of\u0020the\u0020items\u0020in\u0020the\u0020list\u0020of\u0020other\u0020values.",
+            "url": "classes/Par-Core-Values.html#method_equalsOneIn"
+        },                {
+            "fqsen": "\\Par\\Core\\Values\u003A\u003AequalsNoneIn\u0028\u0029",
+            "name": "equalsNoneIn",
+            "summary": "Determines\u0020if\u0020a\u0020value\u0020should\u0020be\u0020considered\u0020equal\u0020to\u0020__none__\u0020of\u0020the\u0020items\u0020in\u0020the\u0020list\u0020of\u0020other\u0020values.",
+            "url": "classes/Par-Core-Values.html#method_equalsNoneIn"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
